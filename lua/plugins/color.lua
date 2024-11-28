@@ -13,19 +13,17 @@ return {
 	-- Config block to further configure the plugin
 	config = function()
 	    -- Call all setup functions
-	    require('kanagawa').setup({
-		-- Set the them (wave or dragon)
-		theme = "wave",
-		-- Use a custom background color
-		overrides = function(colors)
-		    return {
-			Normal = { bg = "#171717" }
-		    }
-		end,
-            })
-	    -- Make sure the colorscheme is applied
-	    -- Options: wave, dragon, lotus (if you'd like your eyes to bleed)
-	    vim.cmd([[colorscheme kanagawa]])
-	end,
-    }
+        require('kanagawa').setup({
+            -- Use a custom background color
+            overrides = function(colors)
+                return {
+                    Normal = { bg = "#171717" }
+                }
+            end,
+        })
+        -- Make sure the colorscheme is applied
+        -- Options: wave, dragon, lotus (if you'd like your eyes to bleed)
+        vim.cmd([[colorscheme kanagawa]])
+    end,
+}
 }
