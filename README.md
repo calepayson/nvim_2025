@@ -12,6 +12,12 @@ Format: Keys - result.
 - "N" - Center the found item.
 - " f" - Format the current buffer using the system lsp.
 - " s" - Perform a global search and replace for the word under the cursor.
+- " u" - Toggle the Undotree window.
+- " pf" - Use Telescope to find files in the current project.
+- "<C-p>" - Use Telescope to search git files in the current project.
+- " ps" - Use Telescope to grep files in the current project.
+- " vh" - Use Telescope to search Neovim's help files.
+
 
 **Visual Mode:**
 - "J" - Move highlighted line(s) up.
