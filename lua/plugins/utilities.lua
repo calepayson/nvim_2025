@@ -8,7 +8,7 @@ return {
         -- Load when the user enters insert mode
         event = "InsertEnter",
         -- Use the default configuration
-        config = true
+        config = true,
     },
 
     ----------------------
@@ -101,6 +101,24 @@ return {
             require("trouble").setup({})
             vim.keymap.set("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", {})
             vim.keymap.set("n", "<leader>xq", "<cmd>Trouble quickfix toggle<cr>", {})
+        end,
+    },
+
+    -----------
+    -- Mason --
+    -----------
+    {
+        "williamboman/mason.nvim",
+        config = function()
+            require("mason").setup({
+                ui = {
+                    icons = {
+                        package_installed = "✓",
+                        package_pending = "➜",
+                        package_uninstalled = "✗"
+                    }
+                }
+            })
         end,
     },
 }

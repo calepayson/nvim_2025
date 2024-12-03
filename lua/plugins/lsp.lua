@@ -6,29 +6,12 @@ return {
         "neovim/nvim-lspconfig",
     },
 
-    -----------
-    -- Mason --
-    -----------
-    {
-        "williamboman/mason.nvim",
-        config = function()
-            require("mason").setup({
-                ui = {
-                    icons = {
-                        package_installed = "✓",
-                        package_pending = "➜",
-                        package_uninstalled = "✗"
-                    }
-                }
-            })
-        end,
-    },
-
     ----------------------
     -- Mason LSP Config --
     ----------------------
     {
         "williamboman/mason-lspconfig.nvim",
+        dependencies = { "williamboman/mason.nvim" },
         config = function()
             require("mason-lspconfig").setup({
                 ensure_installed = {
