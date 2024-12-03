@@ -22,6 +22,13 @@ Format: Keys - result.
 - "<C-k>" - Navigate to the window above.
 - "<C-l>" - Navigate to the window on the right.
 - " xq" - Toggle Trouble quick-fix list.
+- "<C-n>" - Select next autocomplete item.
+- "<C-p>" - Select previous autocomplete item.
+- "<C-b>" - Scroll autocomplete up.
+- "<C-f>" - Scroll autocomplete down.
+- "<C-Space>" - Complete autocomplete suggestion.
+- "<C-e>" - Abort autocomplete.
+- "<CR>" - Accept selected autocomplete.
 
 
 **Visual Mode:**
