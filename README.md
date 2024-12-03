@@ -17,6 +17,10 @@ Format: Keys - result.
 - "<C-p>" - Use Telescope to search git files in the current project.
 - " ps" - Use Telescope to grep files in the current project.
 - " vh" - Use Telescope to search Neovim's help files.
+- "<C-h>" - Navigate to the window on the left.
+- "<C-j>" - Navigate to the window below.
+- "<C-k>" - Navigate to the window above.
+- "<C-l>" - Navigate to the window on the right.
 
 
 **Visual Mode:**
