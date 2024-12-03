@@ -28,9 +28,14 @@ Format: Keys - result.
 [**Lazy.nvim**](https://github.com/folke/lazy.nvim)
 - [Documentation](https://lazy.folke.io/).
 
-### Colorscheme
-[**Kanagawa.nvim**](https://github.com/rebelot/kanagawa.nvim)
+### Color
+[**Kanagawa**](https://github.com/rebelot/kanagawa.nvim)
 - Darkmode pallete with a custom background.
+
+### Utilities
+
+[**Autopairs**](https://github.com/windwp/nvim-autopairs)
+- Adds closing characters whenever opening characters are used.
 
 ## Notes
 
