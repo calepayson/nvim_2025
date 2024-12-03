@@ -111,6 +111,11 @@ return {
         "williamboman/mason.nvim",
         config = function()
             require("mason").setup({
+                ensure_installed = {
+                    -- LSPs
+                    -- Formatters
+                    "stylua",
+                },
                 ui = {
                     icons = {
                         package_installed = "✓",
