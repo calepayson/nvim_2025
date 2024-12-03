@@ -90,5 +90,16 @@ return {
             end)
             vim.keymap.set('n', '<leader>vh', builtin.help_tags, {})
         end,
-    }
+    },
+
+    -------------
+    -- Trouble --
+    -------------
+    {
+        "folke/trouble.nvim",
+        config = function()
+            vim.keymap.set("n", "<leader>xq", "<cmd>Trouble qflist toggle<cr>", {})
+            require("trouble").setup()
+        end,
+    },
 }

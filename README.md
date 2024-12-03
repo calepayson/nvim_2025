@@ -21,6 +21,7 @@ Format: Keys - result.
 - "<C-j>" - Navigate to the window below.
 - "<C-k>" - Navigate to the window above.
 - "<C-l>" - Navigate to the window on the right.
+- " xq" - Toggle Trouble quick-fix list.
 
 
 **Visual Mode:**
