@@ -63,4 +63,14 @@ return {
             require("lualine").setup()
         end,
     },
+
+    --------------
+    -- Undotree --
+    --------------
+    {
+        "mbbill/undotree",
+        config = function()
+            vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
+        end,
+    },
 }
