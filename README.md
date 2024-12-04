@@ -6,29 +6,29 @@ Format: Keys - result.
 
 **Normal Mode:**
 - " pv" - Open the vim file explorer.
-- "<C-d>" - Scroll down half a page and center the cursor.
-- "<C-u>" - Scroll up half a page and center the cursor.
+- "Ctl+d" - Scroll down half a page and center the cursor.
+- "Ctl+u" - Scroll up half a page and center the cursor.
 - "n" - Center the found item.
 - "N" - Center the found item.
 - " f" - Format the current buffer using the system lsp.
 - " s" - Perform a global search and replace for the word under the cursor.
 - " u" - Toggle the Undotree window.
 - " pf" - Use Telescope to find files in the current project.
-- "<C-p>" - Use Telescope to search git files in the current project.
+- "Ctl+p>" - Use Telescope to search git files in the current project.
 - " ps" - Use Telescope to grep files in the current project.
 - " vh" - Use Telescope to search Neovim's help files.
-- "<C-h>" - Navigate to the window on the left.
-- "<C-j>" - Navigate to the window below.
-- "<C-k>" - Navigate to the window above.
-- "<C-l>" - Navigate to the window on the right.
+- "Ctl+h" - Navigate to the window on the left.
+- "Ctl+j" - Navigate to the window below.
+- "Ctl+k" - Navigate to the window above.
+- "Ctl+l" - Navigate to the window on the right.
 - " xq" - Toggle Trouble quick-fix list.
-- "<C-n>" - Select next autocomplete item.
-- "<C-p>" - Select previous autocomplete item.
-- "<C-b>" - Scroll autocomplete up.
-- "<C-f>" - Scroll autocomplete down.
-- "<C-Space>" - Complete autocomplete suggestion.
-- "<C-e>" - Abort autocomplete.
-- "<CR>" - Accept selected autocomplete.
+- "Ctl+n" - Select next autocomplete item.
+- "Ctl+p" - Select previous autocomplete item.
+- "Ctl+b" - Scroll autocomplete up.
+- "Ctl+f" - Scroll autocomplete down.
+- "Ctl+Space" - Complete autocomplete suggestion.
+- "Ctl+e" - Abort autocomplete.
+- "Return" - Accept selected autocomplete.
 
 
 **Visual Mode:**
