@@ -11,6 +11,16 @@ return {
 		config = true,
 	},
 
+	---------------
+	-- Git Signs --
+	---------------
+	{
+		"lewis6991/gitsigns.nvim",
+		config = function()
+			require("gitsigns").setup({})
+		end,
+	},
+
 	----------------------
 	-- Indent Blankline --
 	----------------------
@@ -19,17 +29,53 @@ return {
 		"lukas-reineke/indent-blankline.nvim",
 		main = "ibl",
 		---@module "ibl"
-		---@type ibl.config
 		opts = {},
 	},
 
+	-------------
+	-- Lualine --
+	-------------
+	{
+		"nvim-lualine/lualine.nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		config = function()
+			require("lualine").setup()
+		end,
+	},
+
+	-----------
+	-- Mason --
+	-----------
+	{
+		"williamboman/mason.nvim",
+		config = function()
+			require("mason").setup({
+				ui = {
+					icons = {
+						package_installed = "✓",
+						package_pending = "➜",
+						package_uninstalled = "✗",
+					},
+				},
+			})
+		end,
+	},
+
 	---------------
-	-- Git Signs --
+	-- Telescope --
 	---------------
 	{
-		"lewis6991/gitsigns.nvim",
+		"nvim-telescope/telescope.nvim",
+		tag = "0.1.8",
+		dependencies = { "nvim-lua/plenary.nvim" },
 		config = function()
-			require("gitsigns").setup({})
+			local builtin = require("telescope.builtin")
+			vim.keymap.set("n", "<leader>pf", builtin.find_files, {})
+			vim.keymap.set("n", "<C-p>", builtin.git_files, {})
+			vim.keymap.set("n", "<leader>ps", function()
+				builtin.grep_string({ search = vim.fn.input("Grep > ") })
+			end)
+			vim.keymap.set("n", "<leader>vh", builtin.help_tags, {})
 		end,
 	},
 
@@ -57,45 +103,6 @@ return {
 	},
 
 	-------------
-	-- Lualine --
-	-------------
-	{
-		"nvim-lualine/lualine.nvim",
-		dependencies = { "nvim-tree/nvim-web-devicons" },
-		config = function()
-			require("lualine").setup()
-		end,
-	},
-
-	--------------
-	-- Undotree --
-	--------------
-	{
-		"mbbill/undotree",
-		config = function()
-			vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
-		end,
-	},
-
-	---------------
-	-- Telescope --
-	---------------
-	{
-		"nvim-telescope/telescope.nvim",
-		tag = "0.1.8",
-		dependencies = { "nvim-lua/plenary.nvim" },
-		config = function()
-			local builtin = require("telescope.builtin")
-			vim.keymap.set("n", "<leader>pf", builtin.find_files, {})
-			vim.keymap.set("n", "<C-p>", builtin.git_files, {})
-			vim.keymap.set("n", "<leader>ps", function()
-				builtin.grep_string({ search = vim.fn.input("Grep > ") })
-			end)
-			vim.keymap.set("n", "<leader>vh", builtin.help_tags, {})
-		end,
-	},
-
-	-------------
 	-- Trouble --
 	-------------
 	{
@@ -107,26 +114,13 @@ return {
 		end,
 	},
 
-	-----------
-	-- Mason --
-	-----------
+	--------------
+	-- Undotree --
+	--------------
 	{
-		"williamboman/mason.nvim",
+		"mbbill/undotree",
 		config = function()
-			require("mason").setup({
-				ensure_installed = {
-					-- LSPs
-					-- Formatters
-					"stylua",
-				},
-				ui = {
-					icons = {
-						package_installed = "✓",
-						package_pending = "➜",
-						package_uninstalled = "✗",
-					},
-				},
-			})
+			vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 		end,
 	},
 }
