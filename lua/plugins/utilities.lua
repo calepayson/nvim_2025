@@ -89,6 +89,7 @@ return {
 			require("nvim-treesitter.configs").setup({
 				ensure_installed = {
 					"lua",
+					"markdown_inline",
 					"python",
 				},
 				sync_install = false,
