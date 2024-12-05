@@ -10,7 +10,16 @@ return {
 				formatters_by_ft = {
 					lua = { "stylua" },
 					python = { "black" },
-					cpp = { "clang-format" },
+					cpp = { "clang-format", "clang_format" },
+				},
+				formatters = {
+					clang_format = {
+						command = "clang-format",
+						args = {
+							"--style={BasedOnStyle: Google, IndentWidth: 4, UseTab: Never}",
+						},
+						stdin = true,
+					},
 				},
 				format_on_save = {
 					-- These options will be passed to conform.format()
