@@ -9,6 +9,7 @@ return {
 			require("conform").setup({
 				formatters_by_ft = {
 					lua = { "stylua" },
+					markdown = { "prettierd" },
 					python = { "black" },
 					cpp = { "clang-format", "clang_format" },
 				},
