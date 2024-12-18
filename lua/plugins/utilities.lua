@@ -92,6 +92,7 @@ return {
 					"markdown",
 					"markdown_inline",
 					"python",
+					"rust",
 				},
 				sync_install = false,
 				highlight = {
