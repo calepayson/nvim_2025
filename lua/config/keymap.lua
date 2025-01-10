@@ -5,7 +5,6 @@
 -- Shamelessly stolen from @theprimeagen
 -- Github repo: https://github.com/ThePrimeagen/init.lua/tree/249f3b14cc517202c80c6babd0f9ec548351ec71/lua/theprimeagen
 
-
 -- Set the <leader> key to space
 vim.g.mapleader = " "
 
@@ -34,11 +33,11 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
 -- Copy to system clipboard
-vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 -- Delete without adding text to the buffer
-vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
+vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- Format the current buffer
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
