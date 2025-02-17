@@ -8,6 +8,7 @@ return {
 		config = function()
 			require("conform").setup({
 				formatters_by_ft = {
+					c = { "clang-format", "clang_format" },
 					cpp = { "clang-format", "clang_format" },
 					lua = { "stylua" },
 					markdown = { "prettierd" },
