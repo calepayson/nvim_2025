@@ -14,7 +14,7 @@ Format: Keys - result.
 - " s" - Perform a global search and replace for the word under the cursor.
 - " u" - Toggle the Undotree window.
 - " pf" - Use Telescope to find files in the current project.
-- "Ctl+p>" - Use Telescope to search git files in the current project.
+- "Ctl+p" - Use Telescope to search git files in the current project.
 - " ps" - Use Telescope to grep files in the current project.
 - " vh" - Use Telescope to search Neovim's help files.
 - "Ctl+h" - Navigate to the window on the left.
