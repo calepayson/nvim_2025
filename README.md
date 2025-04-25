@@ -30,6 +30,12 @@ Format: Keys - result.
 - "Ctl+Space" - Complete autocomplete suggestion.
 - "Ctl+e" - Abort autocomplete.
 - "Return" - Accept selected autocomplete.
+- " xx" - Diagnostics (Trouble).
+- " xX" - Buffer diagnostics (Trouble).
+- " cs" - Toggle symbols (Trouble).
+- " cl" - Toggle LSP definitions (Trouble).
+- " xL" - Toggle location list (Trouble).
+- " xQ" - Toggle quickfix list (Trouble).
 
 **Visual Mode:**
 
