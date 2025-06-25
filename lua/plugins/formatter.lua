@@ -14,6 +14,10 @@ return {
 					markdown = { "prettierd" },
 					python = { "black" },
 					rust = { "rustfmt" },
+					javascript = { "prettier" },
+					javascriptreact = { "prettier" },
+					typescript = { "prettier" },
+					typescriptreact = { "prettier" },
 				},
 				formatters = {
 					clang_format = {
@@ -22,6 +26,24 @@ return {
 							"--style={BasedOnStyle: Google, IndentWidth: 4, UseTab: Never}",
 						},
 						stdin = true,
+					},
+					prettier = {
+						args = {
+							prettier = {
+								args = {
+									"--stdin-filepath",
+									"$FILENAME",
+									"--tab-width",
+									"2",
+									"--use-tabs",
+									"false",
+									"--single-quote",
+									"true",
+									"--trailing-comma",
+									"es5",
+								},
+							},
+						},
 					},
 				},
 				format_on_save = {
