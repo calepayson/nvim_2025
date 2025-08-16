@@ -16,6 +16,7 @@ return {
 			require("mason-lspconfig").setup({
 				ensure_installed = {
 					"clangd",
+					"gopls",
 					"html",
 					"lua_ls",
 					"pylsp",

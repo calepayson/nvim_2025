@@ -10,6 +10,7 @@ return {
 				formatters_by_ft = {
 					c = { "clang-format", "clang_format" },
 					cpp = { "clang-format", "clang_format" },
+					go = { "gofmt" },
 					lua = { "stylua" },
 					markdown = { "prettierd" },
 					python = { "black" },
