@@ -155,4 +155,16 @@ return {
 			vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 		end,
 	},
+
+	------------------
+	-- Vim-Fugitive --
+	------------------
+	{
+		"tpope/vim-fugitive",
+		cmd = { "Git", "Gvdiffsplit", "Gread", "Gwrite", "Ggrep", "GMove", "GDelete", "GBrowse" },
+		keys = {
+			{ "<leader>gs", "<cmd>Git<cr>", desc = "Git status" },
+			{ "<leader>gd", "<cmd>Gvdiffsplit<cr>", desc = "Git diff" },
+		},
+	},
 }
